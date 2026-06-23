@@ -1,13 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int add,mul,div,sub,mod;
-    add =5+2; //addition
-    sub =3-5; //subtraction
-    mul = 3*5; //multiplication
-    div = 7/5; //gives 1 quotient
-    mod = 8%6; //gives 2 remainder
-    printf("%d ,%d,%d,%d,%d",add,sub,mul,div,mod); //prints 7,-2,15,1,2
-    return 0;
-    
-}
+   int a ,b,c;
+   a =4;
+   b=8;
+   c = a + b; // addition
+   //a+b=c; // assignment
+   printf("c = %d\n", c);
+   printf("a = %d, b = %d\n", a, b);
+   return 0;
+}//note lhs of assignment operator must be a single variable and rhs can be a single variable or an expression. The assignment operator assigns the value of the right-hand side expression to the left-hand side variable. In this code, we are adding the values of 'a' and 'b' and assigning the result to 'c'.
