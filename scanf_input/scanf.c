@@ -43,4 +43,4 @@ int main() {
     printf("Final Grade:\t%c\n", grade);
 
     return 0;
-}
+}//syntax:scanf("format specifier", &variable); // & ka matlab hai "address of variable

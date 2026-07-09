@@ -54,5 +54,5 @@ int main() {
     // Concept: Screen par single '%' print karne ke liye do baar '%%' likhna padta hai.
     printf("Download Status: 100%%\n");
 
-    return 0;
+    return 1;
 }
