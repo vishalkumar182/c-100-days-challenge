@@ -21,7 +21,7 @@ int main(){
         }
 }*/
 //note avoid using nested if better use logical operator
-#include<stdio.h>
+/*#include<stdio.h>
 int main(){
     int m1,m2;
     printf("Enter marks in both sublect :\n");
@@ -33,4 +33,35 @@ int main(){
         printf("fail");
     }
 
+}*/
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3, max;
+
+    // Asking user for input
+    printf("Enter three integers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    // Outer if-else: Compare num1 and num2
+    if (num1 >= num2) {
+        // Inner if-else 1: num1 is greater or equal, now compare it with num3
+        if (num1 >= num3) {
+            max = num1;
+        } else {
+            max = num3;
+        }
+    } else {
+        // Inner if-else 2: num2 is greater, now compare it with num3
+        if (num2 >= num3) {
+            max = num2;
+        } else {
+            max = num3;
+        }
+    }
+
+    // Printing the final result
+    printf("The maximum number is: %d\n", max);
+
+    return 0;
 }
