@@ -34,7 +34,7 @@ int main(){
     }
 
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main() {
     int num1, num2, num3, max;
@@ -62,6 +62,34 @@ int main() {
 
     // Printing the final result
     printf("The maximum number is: %d\n", max);
+
+    return 0;
+}*/
+#include <stdio.h>
+
+int main() {
+    int year = 1900;
+
+    // Outer if: Must be divisible by 4
+    if (year % 4 == 0) {
+        
+        // Second level: Check century rule
+        if (year % 100 == 0) {
+            
+            // Third level: Check exceptional century rule
+            if (year % 400 == 0) {
+                printf("%d is a leap year.\n", year);
+            } else {
+                printf("%d is not a leap year.\n", year);
+            }
+            
+        } else {
+            printf("%d is a leap year.\n", year);
+        }
+
+    } else {
+        printf("%d is not a leap year.\n", year);
+    }
 
     return 0;
 }
