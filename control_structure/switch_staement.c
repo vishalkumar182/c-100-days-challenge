@@ -15,7 +15,7 @@ int main() {
     }
     return 0;
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main() {
     // 1 = Red, 2 = Yellow, 3 = Green
@@ -39,6 +39,44 @@ int main() {
     }
 
     return 0;
-}
+}*/
 
 // NEED of switch statement: The switch statement is used to execute one block of code among many options based on the value of a variable. It provides a cleaner and more readable way to handle multiple conditions compared to using multiple if-else statements. In this example, it allows us to print the name of the day corresponding to the integer value of 'day'.
+/*#include <stdio.h>
+int main(){
+    int x =3;
+    switch (x)
+    {
+    case 1:
+        printf("januray");
+        break;
+    
+    default:
+    printf("invalid");
+        break;
+     case 2:
+        printf("feburary");
+        break;
+        case 3:
+        printf("march");   
+    }
+}*/
+#include <stdio.h>
+int main(){
+    int x =3;
+    switch (x)
+    {
+    case 3:
+        printf("JAN\n");
+        
+    
+    default:
+    printf("Invalid..");
+        break;
+     case 2:
+        printf("feburary");
+        break;
+        case 1:
+        printf("march");   
+    }
+}
