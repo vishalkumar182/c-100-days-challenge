@@ -61,7 +61,7 @@ int main(){
         printf("march");   
     }
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 int main(){
     int x =3;
     switch (x)
@@ -79,4 +79,47 @@ int main(){
         case 1:
         printf("march");   
     }
+}*/
+/*#include <stdio.h>
+int main() {
+    int level = 1; // User access level
+    switch (level) {
+        case 1:
+            printf("Access View\n");
+        case 2:
+            printf("Access Edit\n");
+        case 3:
+            printf("Access Admin\n");
+    }
+}*/
+//  Since there are no break statements, all cases from the matched case (case 1) down to the end will execute.
+#include <stdio.h>
+int main() {
+    int x = 5;
+    switch (x) {
+        default: 
+            printf("Unknown value!\n");
+            break; // The default case doesn't need to be at the bottom. The code evaluates default only if no other cases match.
+        case 1:
+            printf("One\n");
+            break;
+        case 2:
+            printf("Two\n");
+            break;
+    }
 }
+/*#include <stdio.h>
+int main() {
+    int month = 2; // e.g., February
+    switch (month) {
+        case 12: case 1: case 2://muliple case labels can be used to group cases that should execute the same block of code
+            printf("Winter\n");
+            break;
+        case 3: case 4: case 5:
+            printf("Spring\n");
+            break;
+        default:
+            printf("Invalid month");
+    }
+}*/
+
