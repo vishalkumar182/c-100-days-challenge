@@ -7,7 +7,7 @@ int main() {
     }
     return 0;
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main() {
     printf("Counting down even numbers:\n");
@@ -16,5 +16,16 @@ int main() {
         printf("%d ", i);
     }
     printf("\n");
+    return 0;
+}*/
+#include <stdio.h>
+
+int main()
+{
+    for(int i = 2; i <= 20; i += 2)
+    {
+        printf("%d\n", i);
+    }
+
     return 0;
 }
