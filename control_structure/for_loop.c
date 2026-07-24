@@ -18,7 +18,7 @@ int main() {
     printf("\n");
     return 0;
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main()
 {
@@ -26,6 +26,31 @@ int main()
     {
         printf("%d\n", i);
     }
+
+    return 0;
+}*/ 
+//Level 2: Logic Building
+
+//Example 5: Sum of numbers 1 to n
+/*INPUT: 5
+CALCULATION: 1 + 2 + 3 + 4 + 5 = 15
+OUTPUT: 15*/
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int sum = 0;
+
+    printf("Enter n: ");
+    scanf("%d",&n);
+
+    for(int i=1; i<=n; i++)
+    {
+        sum = sum + i;
+    }
+
+    printf("Sum = %d",sum);
 
     return 0;
 }
