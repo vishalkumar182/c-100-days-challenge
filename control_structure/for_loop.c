@@ -35,7 +35,7 @@ int main()
 /*INPUT: 5
 CALCULATION: 1 + 2 + 3 + 4 + 5 = 15
 OUTPUT: 15*/
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main()
 {
@@ -52,5 +52,28 @@ int main()
 
     printf("Sum = %d",sum);
 
+    return 0;
+}*/
+#include <stdio.h>
+
+int main() {
+    long long num; 
+    int count = 0;
+
+    printf("Enter an integer: ");
+    scanf("%lld", &num);
+
+    // Mastery Tip: Handle the unique edge case where input is exactly 0
+    if (num == 0) {
+        count = 1;
+    } else {
+        // Compact for loop: initialization is omitted since count/num are ready,
+        // it runs while num is not 0, and divides num by 10 every iteration.
+        for (; num != 0; num /= 10) {
+            count++;
+        }
+    }
+
+    printf("Total digits: %d\n", count);
     return 0;
 }
