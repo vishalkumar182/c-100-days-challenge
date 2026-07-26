@@ -54,7 +54,7 @@ int main()
 
     return 0;
 }*/
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main() {
     long long num; 
@@ -76,4 +76,14 @@ int main() {
 
     printf("Total digits: %d\n", count);
     return 0;
+}*/
+#include <stdio.h>
+
+int main() {
+    // Start at 10, run while i >= 1, decrease by 1
+    for (int i = 10; i >= 1; i--) {
+        printf("%d ", i);
+    }
+    return 0;
 }
+
