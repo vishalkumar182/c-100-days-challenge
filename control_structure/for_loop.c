@@ -77,7 +77,7 @@ int main() {
     printf("Total digits: %d\n", count);
     return 0;
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main() {
     // Start at 10, run while i >= 1, decrease by 1
@@ -85,5 +85,20 @@ int main() {
         printf("%d ", i);
     }
     return 0;
-}
+}/**/
 
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number to see its table: ");
+    scanf("%d", &num);
+
+    // The loop starts at 1 and repeats until i reaches 10
+    for (int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+
+    return 0;
+}
